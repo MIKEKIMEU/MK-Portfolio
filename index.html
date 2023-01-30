@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-COMPATIBLE" content="IE-edge">
+        <meta name="viewport" content="width-device-width,initial-scale=1.0">
+        <title>Personal Portfolio Website</title>
+        <link rel="stylesheet" href="style.css">
+
+        <script src="https://kit.fontawesome.com/54b94c6606.js" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/logo.PNG" class="logo">
+                    <ul>
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fas fa-times"></i>
+                    </ul>
+                    <i class="fas fa-bars"></i>
+                </nav>
+                <div class="header-text">
+                    <p>Web Designer</p>
+                    <h1>Hi,I'm <span>Michael</span><br> Kimeu From Kenya</h1>
+                </div>
+            </div>
+        </div>
+    <!-----------------------About----------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/background.jpg"
+                    width="300"
+                    height="400"/>
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a second year student at Dedan Kimathi University of Technology. I am pursuing Bacehlor of Science 
+                        in Information Technology. My passion in technology lies in web development. 
+                        This is the first site that I have come up with and I wish to come up with many more in the near future.
+                    </p>
+                    <div class="tab-titles">
+                        <P class="tab-links active-link" onclick="opentab('skills')">Skills</P>
+                        <P class="tab-links" onclick="opentab('experience')">Experience</P>
+                        <P class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-content" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Creating Web Site</li>
+                            <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                            <li><span>App Development</span><br>Buidling Android/IOS apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content active-tab" id="experience">
+                        <ul>
+                            <li><span>2021-Current</span><br>UI/UX Desgning at Dedan Kimathi University of Technology</li>
+                            <li><span>2019-2021</span><br>Team Lead at KCB</li>
+                            <li><span>2017-2019</span><br>Internship at KCB Masii Branch</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-content" id="education">
+                        <ul>
+                            <li><span>2016</span><br>UI/UX Design Training at Zalego College</li>
+                            <li><span>2016</span><br>MBA from Moringa School</li>
+                            <li><span>2014</span><br>BBA from JKUAT</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------------------Services--------------->
+    <div id="services">
+        <div class="conatiner">
+            <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>I design website for clients at affordable prices</p>
+                <a href="#">Learn More</a>
+            </div>
+
+            <div>
+                <i class="fa-sharp fa-solid fa-crop"></i>
+                <h2>UI/UX Design</h2>
+                <p>I Design Web/App Interfaces</p>
+                <a href="#">Learn More</a>
+            </div>
+
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>I build Android/IOS apps</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-------------Contact-------------->
+    <div id="contact">
+        <div class="conatiner">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>michaelkimeu001@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>0710187726</p>
+                    <div class="social-icons">
+                        <a href="mailto:michaelkimeu001@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                        <a href="https://github.com/MIKEKIMEU"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://wa.me/0710187726"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="http://www.instagram.com/mike_wetu"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/michael-kimeu-249932230/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <form action="https://kind-rock-08a786003.1.azurestaticapps.net/">
+                        <button type="submit" class="btn btn2">Download CV</button>
+                    </form>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email"  placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>
+                Copyright Michael <i class="fa-regular fa-heart"></i>
+            </p>
+        </div>
+
+    </div>
+
+
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontent=document.getElementsByClassName("tab-content");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+
+            for(tabcontent of tabcontent){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    </body>
+</html>
