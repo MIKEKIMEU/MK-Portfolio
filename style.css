@@ -37,9 +37,13 @@ nav {
     width: 140px;
 }
 
-nav ul li {
-    display: inline-block;
+nav ul {
+    display: flex;
     list-style: none;
+    padding: 0;
+}
+
+nav ul li {
     margin: 10px 20px;
 }
 
@@ -216,6 +220,75 @@ nav ul li a:hover::after {
     background: #ff004f;
     transform: translateY(-10px);
 }
+
+/* Video Presentations */
+#videos {
+    padding: 30px 0;
+}
+
+#videos .video-container {
+    margin: 0 auto 20px;
+    max-width: 800px; /* Adjust the maximum width as needed */
+    text-align: center;
+}
+
+#videos .video-container video {
+    width: 100%;
+    height: auto;
+    max-width: 100%; /* Ensures the video does not exceed container width */
+    border-radius: 5px;
+}
+
+#videos .video-container .video-description {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Style for resource buttons */
+.resource-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #007BFF; /* Example color, use the color from your other buttons */
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.resource-btn:hover {
+    background-color: #0056b3; /* Darker shade for hover effect */
+    color: #fff;
+}
+
+
+
+/* Video Presentations */
+#videos {
+    padding: 30px 0;
+}
+
+#videos .video-container {
+    margin-bottom: 20px;
+}
+
+#videos .video-container video {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+#videos .video-container .video-description {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+}
+
 
 /* Contact */
 .contact-left {
