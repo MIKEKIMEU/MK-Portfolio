@@ -160,15 +160,9 @@ nav ul li a:hover::after {
     display: block;
 }
 
-.tab-content {
-    display: none;
-}
-
 .tab-links.active-link {
-    font-weight: bold; /* Just an example, style as needed */
+    font-weight: bold;
 }
-
-
 
 /* Services */
 #services {
@@ -274,31 +268,6 @@ nav ul li a:hover::after {
     background-color: #0056b3; /* Darker shade for hover effect */
     color: #fff;
 }
-
-
-
-/* Video Presentations */
-#videos {
-    padding: 30px 0;
-}
-
-#videos .video-container {
-    margin-bottom: 20px;
-}
-
-#videos .video-container video {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-
-#videos .video-container .video-description {
-    margin-top: 10px;
-    font-size: 16px;
-    color: #333;
-    text-align: center;
-}
-
 
 /* Contact */
 .contact-left {
