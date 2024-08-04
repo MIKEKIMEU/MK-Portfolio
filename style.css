@@ -160,6 +160,15 @@ nav ul li a:hover::after {
     display: block;
 }
 
+.tab-content {
+    display: none;
+}
+
+.tab-links.active-link {
+    font-weight: bold; /* Just an example, style as needed */
+}
+
+
 
 /* Services */
 #services {
