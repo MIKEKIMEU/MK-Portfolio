@@ -127,3 +127,8 @@ particlesJS('particles-js', {
     "retina_detect": true
   });
   
+document.addEventListener('DOMContentLoaded', () => {
+    particlesJS.load('particles-js', 'particles-config.json', () => {
+        console.log('Particles.js config loaded');
+    });
+});
